@@ -33,7 +33,8 @@ class Animal {
     open var nCount = 0
     fun crying() = println("$this>> crying!!!")
     fun eat() = println("$this>> eat!!!")
-
+    // java였으면 interface를 사용해서 해야한다.
+    // 코틀린에서는 그런 불편함을 없애고 쉽게 이벤트 핸들러를 등록할 수 있다.
     open fun setOnEvent(nCount : Int, message: String, extFunc: Animal.(Int) -> Unit) : Animal{
         // 확장함수가 실행되어야 한다. 숫자를 넘겼다.
         when (message) {
