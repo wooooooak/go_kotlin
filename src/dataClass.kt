@@ -8,7 +8,7 @@ fun main(args: Array<String>) {
 
     // 이 부분이 제일 유용함
     val data3 = data2.copy(name="회장님")
-    println("${data3.toString()}")
+    println("$data3") // data3.toString() 처럼 해주지 않아도 됨.
 }
 
 class DummyClass {
